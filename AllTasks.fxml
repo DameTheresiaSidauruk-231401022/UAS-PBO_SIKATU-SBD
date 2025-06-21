@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sikatu.bantu_teman.controller.AllTasksController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <FontIcon fx:id="backButton" iconLiteral="fas-arrow-left" iconSize="20" />
+                <Label text="All Unfinished Tasks">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+                <Pane HBox.hgrow="ALWAYS" />
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <ListView fx:id="allTasksListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+            </BorderPane.margin>
+        </ListView>
+    </center>
+</BorderPane>

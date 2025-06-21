@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sikatu.bantu_teman.controller.CoursesController">
+    <top>
+        <VBox spacing="15.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" spacing="15.0">
+                    <children>
+                        <FontIcon fx:id="backButton" iconLiteral="fas-arrow-left" iconSize="20"  />
+                        <Label text="Courses">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" style="-fx-background-color: #FFFFFF; -fx-background-radius: 15; -fx-border-color: #E0E0E0; -fx-border-radius: 15;">
+                    <children>
+                        <FontIcon iconColor="#888888" iconLiteral="fas-search" iconSize="18" />
+                        <TextField fx:id="searchField" promptText="Search for courses..." style="-fx-background-color: transparent; -fx-border-color: transparent;" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <padding>
+                        <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </top>
+    <center>
+        <ListView fx:id="coursesListView" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets left="20.0" right="20.0" />
+            </BorderPane.margin>
+        </ListView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="70.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, -5);">
+            <children>
+                <HBox fx:id="homeButton" alignment="CENTER" style="-fx-cursor: hand;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <FontIcon iconColor="#888888" iconLiteral="fas-home" iconSize="24" />
+                                <Label text="Home" textFill="#888888" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="calendarButton" alignment="CENTER" style="-fx-cursor: hand;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <FontIcon iconColor="#888888" iconLiteral="fas-calendar-alt" iconSize="24" />
+                                <Label text="Calendar" textFill="#888888" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="createTaskButton" alignment="CENTER" style="-fx-cursor: hand;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Pane prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                        <VBox alignment="CENTER">
+                            <children>
+                                <FontIcon iconColor="#A0C878" iconLiteral="fas-plus-circle" iconSize="48" />
+                            </children>
+                        </VBox>
+                        <Pane prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" style="-fx-cursor: hand;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <FontIcon iconColor="#000000" iconLiteral="fas-file-alt" iconSize="24" />
+                                <Label text="Courses" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="settingsButton" alignment="CENTER" style="-fx-cursor: hand;" HBox.hgrow="ALWAYS">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <FontIcon iconColor="#888888" iconLiteral="fas-cog" iconSize="24" />
+                                <Label text="Settings" textFill="#888888" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
