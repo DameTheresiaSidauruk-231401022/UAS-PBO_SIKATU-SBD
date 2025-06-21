@@ -5,9 +5,13 @@
 - Cikita Natasya Br Sembiring (231401121)
 
 **SIKATU - Sistem Katalog Tugas Kuliah**
+
 Informasi Dasar Aplikasi
+
 Nama Aplikasi: SIKATU (Sistem Katalog Tugas Kuliah)
+
 Tema Proyek: Produktivitas
+
 Target Pengguna: Mahasiswa 
 
 **Deskripsi Singkat Tentang SIKATU:**
