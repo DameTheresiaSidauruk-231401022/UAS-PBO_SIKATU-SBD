@@ -1,4 +1,4 @@
-Anggota SBD :
+**Anggota SBD :**
 - Shafda Afryanda Ekhanusa Persada (231401001)
 - Dame Theresia Rejeki Sidauruk (231401022)
 - Dini Arya Putri (231401025)
@@ -10,11 +10,11 @@ Nama Aplikasi: SIKATU (Sistem Katalog Tugas Kuliah)
 Tema Proyek: Produktivitas
 Target Pengguna: Mahasiswa 
 
-**Deskripsi Singkat Tentang SIKATU: **
+**Deskripsi Singkat Tentang SIKATU:**
 SIKATU adalah aplikasi berbasis JavaFX yang dirancang khusus untuk membantu mahasiswa dalam mengelola dan mengorganisir tugas-tugas kuliah mereka secara efisien. Aplikasi ini menerapkan konsep manajemen tugas modern dengan antarmuka yang user-friendly, memungkinkan mahasiswa untuk tidak hanya mencatat tugas tetapi juga memantau progress, mengatur prioritas, dan mendapatkan reminder otomatis untuk deadline yang akan datang.
 Dengan fitur katalog yang komprehensif, mahasiswa dapat mengkategorikan tugas berdasarkan mata kuliah, status penyelesaian, dan tingkat prioritas. SIKATU juga dilengkapi dengan visualisasi data berupa progress bar dan kalender interaktif yang memberikan gambaran jelas tentang beban kerja dan jadwal akademik.
-**
-Tujuan dan Manfaat Aplikasi**
+
+**Tujuan dan Manfaat Aplikasi**
 **Tujuan Utama:**
 1. Meningkatkan produktivitas akademik mahasiswa
 2. Mengurangi risiko kelupaan terhadap tugas dan deadline
