@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sikatu.bantu_teman.controller.SettingsController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="50.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <FontIcon fx:id="backButton" iconLiteral="fas-arrow-left" iconSize="20" styleClass="clickable-icon" />
+                <Label text="Settings">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="14.0" layoutY="85.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="85.0">
+            <content>
+                <VBox spacing="20.0">
+                    <Label text="Account" textFill="#8a8a8a">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Label>
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 10;">
+                        <children>
+                            <HBox fx:id="editProfileButton" alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-user-edit" iconSize="20" fill="#404040"/>
+                                    <Label text="Edit profile" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-shield-alt" iconSize="20" fill="#404040"/>
+                                    <Label text="Security" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-bell" iconSize="20" fill="#404040"/>
+                                    <Label text="Notifications" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-lock" iconSize="20" fill="#404040"/>
+                                    <Label text="Privacy" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                    </VBox>
+
+                    <Label text="Notifications" textFill="#8a8a8a">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Label>
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 10;">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+                                <children>
+                                    <FontIcon iconLiteral="fas-bell" iconSize="20" fill="#404040"/>
+                                    <Label text="Reminder: Deadline D-3" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <ToggleButton fx:id="reminderD3Toggle" mnemonicParsing="false" selected="true" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+                                <children>
+                                    <FontIcon iconLiteral="fas-bell" iconSize="20" fill="#404040"/>
+                                    <Label text="Reminder: Deadline D-1" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <ToggleButton fx:id="reminderD1Toggle" mnemonicParsing="false" selected="true" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+                                <children>
+                                    <FontIcon iconLiteral="fas-tasks" iconSize="20" fill="#404040"/>
+                                    <Label text="Task Completion Notification" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <ToggleButton mnemonicParsing="false" selected="true" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                    </VBox>
+
+                    <Label text="Theme" textFill="#8a8a8a">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Label>
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 10;">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+                                <children>
+                                    <FontIcon iconLiteral="fas-sun" iconSize="20" fill="#404040"/>
+                                    <Label text="Light Mode" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <ToggleButton fx:id="lightModeToggle" mnemonicParsing="false" selected="true">
+                                        <toggleGroup>
+                                            <ToggleGroup fx:id="themeToggleGroup" />
+                                        </toggleGroup>
+                                    </ToggleButton>
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+                                <children>
+                                    <FontIcon iconLiteral="fas-moon" iconSize="20" fill="#404040"/>
+                                    <Label text="Dark Mode" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <ToggleButton fx:id="darkModeToggle" mnemonicParsing="false" toggleGroup="$themeToggleGroup" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                    </VBox>
+
+                    <Label text="Actions" textFill="#8a8a8a">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Label>
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 10;">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-flag" iconSize="20" fill="#404040"/>
+                                    <Label text="Report a problem" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                            <Separator />
+                            <HBox fx:id="logoutButton" alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0" style="-fx-cursor: hand;">
+                                <children>
+                                    <FontIcon iconLiteral="fas-sign-out-alt" iconSize="20" fill="#FF5252"/>
+                                    <Label text="Log out" textFill="#FF5252" />
+                                </children>
+                                <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+
+        <HBox alignment="CENTER" prefHeight="70.0" style="-fx-background-color: white; -fx-border-color: #E0E0E0 transparent transparent transparent; -fx-border-width: 1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <HBox fx:id="homeButton" alignment="CENTER" prefWidth="78.0" style="-fx-cursor: hand;">
+                    <FontIcon iconLiteral="fas-home" iconSize="24" fill="#A0A0A0" />
+                </HBox>
+                <HBox fx:id="calendarButton" alignment="CENTER" prefWidth="78.0" style="-fx-cursor: hand;">
+                    <FontIcon iconLiteral="fas-calendar-alt" iconSize="24" fill="#A0A0A0" />
+                </HBox>
+                <HBox fx:id="createTaskButton" alignment="CENTER" prefWidth="78.0" style="-fx-cursor: hand;">
+                    <FontIcon iconLiteral="fas-plus-circle" iconSize="36" fill="#A0C878" />
+                </HBox>
+                <HBox fx:id="coursesButton" alignment="CENTER" prefWidth="78.0" style="-fx-cursor: hand;">
+                    <FontIcon iconLiteral="fas-file-alt" iconSize="24" fill="#A0A0A0" />
+                </HBox>
+                <HBox alignment="CENTER" prefWidth="78.0" style="-fx-background-color: #E8F5E9; -fx-background-radius: 10; -fx-cursor: hand;">
+                    <FontIcon iconLiteral="fas-cog" iconSize="24" fill="#A0C878" />
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

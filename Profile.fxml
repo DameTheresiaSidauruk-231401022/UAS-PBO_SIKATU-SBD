@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sikatu.bantu_teman.controller.ProfileController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <FontIcon fx:id="backButton" iconLiteral="fas-arrow-left" iconSize="20" style="-fx-cursor: hand;" />
+                <Label text="Edit Profile">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets left="30.0" right="30.0" top="20.0" />
+            </padding>
+            <children>
+                <Circle fx:id="profileImageCircle" fill="LIGHTGREY" onMouseClicked="#handleChangePicture" radius="60.0" stroke="#A0C878" strokeType="INSIDE" strokeWidth="3.0" style="-fx-cursor: hand;" />
+
+                <VBox spacing="15.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Full Name">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameField" editable="false" promptText="Your full name" style="-fx-background-color: #E0E0E0; -fx-opacity: 0.7;" />
+
+                        <Label text="Email">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="emailField" editable="false" promptText="your.email@example.com" style="-fx-background-color: #E0E0E0; -fx-opacity: 0.7;" />
+
+                        <Label text="Date of Birth">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <DatePicker fx:id="dobPicker" prefWidth="400.0" />
+
+                        <Label text="Country">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="countryComboBox" prefWidth="400.0" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <children>
+                <Button onAction="#handleSave" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #A0C878; -fx-background-radius: 15;" text="Save Changes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="40.0" />
+            </padding>
+        </VBox>
+    </bottom>
+</BorderPane>

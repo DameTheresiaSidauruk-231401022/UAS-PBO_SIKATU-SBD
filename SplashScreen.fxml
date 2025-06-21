@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844.0" prefWidth="390.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sikatu.bantu_teman.controller.SplashScreenController">
+    <children>
+        <VBox alignment="CENTER" layoutX="45.0" layoutY="181.0" prefHeight="482.0" prefWidth="300.0" spacing="15.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+            <children>
+                <!-- Image container -->
+                <ImageView fitHeight="250.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/splash.jpg" />
+                    </image>
+                </ImageView>
+
+                <!-- Title labels -->
+                <VBox alignment="CENTER" spacing="5.0">
+                    <Label text="Track, Manage, and" textAlignment="CENTER">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                    <Label textAlignment="CENTER">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                        <text>Master </text>
+                    </Label>
+                    <Label text="Your Tasks" style="-fx-text-fill: #A0C878;" textAlignment="CENTER">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </VBox>
+
+                <!-- Description labels with reduced spacing -->
+                <VBox alignment="CENTER" spacing="5.0">
+                    <Label alignment="CENTER" text="All your tasks, organized and ready." textAlignment="CENTER" wrapText="true">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                    <Label alignment="CENTER" text="Let's get to it!" textAlignment="CENTER" wrapText="true">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Label>
+                </VBox>
+            </children>
+        </VBox>
+        <Button fx:id="letsStartButton" layoutX="45.0" layoutY="728.0" mnemonicParsing="false" onAction="#handleLetsStart" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #A0C878; -fx-background-radius: 25;" text="Let's Start" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
